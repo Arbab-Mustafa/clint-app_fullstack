@@ -80,8 +80,5 @@
     "turbo": "^2.3.3",
     "typescript": "^5",
     "wrangler": "^3.102.0"
-  },
-  "engines": {
-  "node": "18.x"
-}
+  } 
 }

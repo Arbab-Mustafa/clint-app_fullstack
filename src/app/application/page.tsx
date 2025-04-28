@@ -25,7 +25,7 @@ export default function ApplicationPage() {
     currentMCAPayment: "",
   });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -33,12 +33,12 @@ export default function ApplicationPage() {
     });
   };
 
-  const handleOptionSelect = (option) => {
+  const handleOptionSelect = (option: string) => {
     setSelectedOption(option);
     setStep(2);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real application, this would send the data to a server
     alert("Application submitted successfully! Our team will contact you shortly.");
